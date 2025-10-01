@@ -1,8 +1,3 @@
-# School-Admission-Portal
-Perfect 👍 Adding a **project structure tree** will make your README much more professional and easy to understand for anyone viewing your repository. Here’s the updated **README.md** with the structure included:
-
----
-
 # 📚 School Admission Portal
 
 A web-based application built using **Java Spring Boot** that simplifies and automates the **student admission process** for schools. This system helps administrators manage applications, track admission status, and maintain student records efficiently.
