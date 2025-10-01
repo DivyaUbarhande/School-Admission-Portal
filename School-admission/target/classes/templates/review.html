@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Review & Submit</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="form-container">
+  <h2>Review Your Application</h2>
+
+  <p><strong>Student Name:</strong> <span th:text="${formData.studentName}"></span></p>
+  <p><strong>DOB:</strong> <span th:text="${formData.dob}"></span></p>
+  <p><strong>Gender:</strong> <span th:text="${formData.gender}"></span></p>
+  <p><strong>Class:</strong> <span th:text="${formData.classApplied}"></span></p>
+  <p><strong>Parent Name:</strong> <span th:text="${formData.parentName}"></span></p>
+  <p><strong>Email:</strong> <span th:text="${formData.email}"></span></p>
+  <p><strong>Phone:</strong> <span th:text="${formData.phone}"></span></p>
+  <p><strong>Previous School:</strong> <span th:text="${formData.previousSchool}"></span></p>
+  <p><strong>Last Grade:</strong> <span th:text="${formData.lastGrade}"></span></p>
+  <p><strong>Marks:</strong> <span th:text="${formData.marks}"></span>%</p>
+
+  <form th:action="@{/admission/submit}" method="post">
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Step 3 - Academic Info</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="form-container">
+  <h2>Academic Information</h2>
+  <form th:action="@{/admission/step3}" method="post">
+    <label>Previous School:</label>
+    <input type="text" name="previousSchool">
+
+    <label>Last Grade:</label>
+    <input type="text" name="lastGrade">
+
+    <label>Marks (%):</label>
+    <input type="number" name="marks" step="0.1">
+
+    <button type="submit">Next</button>
+  </form>
+</div>
+</body>
+</html>

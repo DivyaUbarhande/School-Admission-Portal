@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Step 2 - Parent Info</title>
+  <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="form-container">
+  <h2>Parent Information</h2>
+  <form th:action="@{/admission/step2}" method="post">
+    <label>Parent Name:</label>
+    <input type="text" name="parentName" required>
+
+    <label>Email:</label>
+    <input type="email" name="email" required>
+
+    <label>Phone:</label>
+    <input type="tel" name="phone" required>
+
+    <button type="submit">Next</button>
+  </form>
+</div>
+</body>
+</html>
